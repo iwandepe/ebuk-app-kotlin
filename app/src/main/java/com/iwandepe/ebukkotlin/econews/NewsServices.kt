@@ -9,8 +9,8 @@ import retrofit2.http.Query
 private const val BASE_URL = "https://newsapi.org"
 
 interface NewsapiService {
-    @GET("v2/top-headlines?country=id&apiKey=8c33489d96b2428ea4fcda483ccd71fd")
-    fun getArticlesList(@Query("category") category: String): Call<NewsResponse>
+    @GET("v2/top-headlines?category=health&apiKey=8c33489d96b2428ea4fcda483ccd71fd")
+    fun getArticlesList(@Query("country") category: String): Call<NewsResponse>
 }
 
 data class Article(

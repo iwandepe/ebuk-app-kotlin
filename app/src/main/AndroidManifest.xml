@@ -22,6 +22,7 @@
         </activity>
         <activity android:name=".MainActivity"></activity>
         <activity android:name=".econews.EconewsActivity"></activity>
+        <activity android:name="."></activity>
 
         <meta-data
             android:name="preloaded_fonts"
