@@ -33,8 +33,8 @@ android {
         jvmTarget = '1.8'
     }
 
-    dataBinding {
-        enabled = true
+    buildFeatures {
+        dataBinding true
     }
 }
 
@@ -49,16 +49,21 @@ dependencies {
     implementation 'androidx.navigation:navigation-fragment-ktx:2.3.3'
     implementation 'androidx.navigation:navigation-ui-ktx:2.3.3'
     implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+
+    //noinspection GradleCompatible
+    implementation "androidx.exifinterface:exifinterface:1.0.0"
+
     testImplementation 'junit:junit:4.+'
     androidTestImplementation 'androidx.test.ext:junit:1.1.2'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
 
     // Retrofit
-//    implementation "com.squareup.retrofit2:retrofit:2.4.0"
-//    implementation "com.squareup.retrofit2:converter-gson:2.4.0"
+    implementation "com.squareup.retrofit2:retrofit:2.4.0"
+    implementation "com.squareup.retrofit2:converter-gson:2.4.0"
 
     // Picasso for handling image from internet
-//    implementation 'com.squareup.picasso:picasso:2.71828'
+    implementation 'com.squareup.picasso:picasso:2.71828'
 
-//    implementation "com.android.support:support-compat:28.0.0"
+    //noinspection GradleCompatible
+    implementation "com.android.support:support-compat:28.0.0"
 }

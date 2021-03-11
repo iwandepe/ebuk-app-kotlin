@@ -1,5 +1,11 @@
 package com.iwandepe.ebukkotlin.econews
 
+import retrofit2.Call
+import retrofit2.Retrofit
+import retrofit2.converter.gson.GsonConverterFactory
+import retrofit2.http.GET
+import retrofit2.http.Query
+
 private const val BASE_URL = "https://newsapi.org"
 
 interface NewsapiService {
@@ -30,6 +36,6 @@ object NewsSevices {
             .baseUrl(BASE_URL)
             .build()
 
-        return retrofit.create(BusinessServices::class.java)
+        return retrofit.create(NewsapiService::class.java)
     }
 }

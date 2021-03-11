@@ -15,5 +15,4 @@ class ListByCategoryFragment : Fragment() {
         // Inflate the layout for this fragment
         return inflater.inflate(R.layout.fragment_list_by_category, container, false)
     }
-    }
 }
