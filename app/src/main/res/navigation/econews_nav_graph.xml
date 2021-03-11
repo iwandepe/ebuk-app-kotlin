@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/econews_nav_graph"
+    app:startDestination="@id/listByCategoryFragment">
+
+    <fragment
+        android:id="@+id/listByCategoryFragment"
+        android:name="com.iwandepe.ebukkotlin.econews.ListByCategoryFragment"
+        android:label="fragment_list_by_category"
+        tools:layout="@layout/fragment_list_by_category" >
+        <action
+            android:id="@+id/action_listByCategoryFragment_to_detailDataFragment"
+            app:destination="@id/detailDataFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/categoryListFragment"
+        android:name="com.iwandepe.ebukkotlin.econews.CategoryListFragment"
+        android:label="fragment_category_list"
+        tools:layout="@layout/fragment_category_list" >
+        <action
+            android:id="@+id/action_categoryListFragment_to_listByCategoryFragment"
+            app:destination="@id/listByCategoryFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/detailDataFragment"
+        android:name="com.iwandepe.ebukkotlin.econews.DetailDataFragment"
+        android:label="fragment_detail_data"
+        tools:layout="@layout/fragment_detail_data" />
+</navigation>
